@@ -190,6 +190,25 @@ SELECT MIN(downloads)
 FROM fake_apps;
 
 SELECT MAX(price)
+FROM fake_apps;
+
+
+
+--*** AVERAGE ***--
+SELECT AVG(downloads)
+FROM fake_apps;
+
+SELECT AVG(price)
+FROM fake_apps;
+
+
+
+--*** ROUND ***--
+SELECT name, ROUND(price, 0)
+FROM fake_apps;
+
+SELECT ROUND(AVG(price), 2)
 FROM fake_apps;*/
+
 
 
