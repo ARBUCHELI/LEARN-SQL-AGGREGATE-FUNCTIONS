@@ -1,3 +1,5 @@
+--*** INTRODUCTION ***--
+
 /*CREATE TABLE fake_apps (
     id INTEGER,
     name TEXT, 
@@ -37,7 +39,7 @@ INSERT INTO fake_apps (id, name, category, downloads, price)
 VALUES(45, 'Hayholding', 'Medical', 15845, 14.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(59, 'Sailflex', 'Productivity', 21984, 0.99);*/
+VALUES(59, 'Sailflex', 'Productivity', 21984, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
 VALUES(60, 'waretam', 'Catalogs', 31087, 2.99);
@@ -100,61 +102,88 @@ INSERT INTO fake_apps (id, name, category, downloads, price)
 VALUES(159,	'Sailline',	'Sports', 9340, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(163	Gogoware	Games	7287	0.0);
+VALUES(163,	'Gogoware',	'Games', 7287, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(166	bigzap	Games	20126	0.0);
+VALUES(166, 'bigzap', 'Games', 20126, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(175	O-electronics	Music	2469	0.0);
+VALUES(175,	'O-electronics', 'Music', 2469, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(181	Flexlane	Navigation	13576	1.99);
+VALUES(181, 'Flexlane',	'Navigation', 13576, 1.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(182	Gogo-media	Reference	17242	2.99);
+VALUES(182,	'Gogo-media', 'Reference', 17242, 2.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(185	santech	Health & Fitness	21359	1.99);
+VALUES(185,	'santech', 'Health & Fitness', 21359, 1.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(199	Mediajob	Games	21821	0.99);
+VALUES(199,	'Mediajob',	'Games', 21821, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(200	Freelamfax	Catalogs	29513	2.99);
+VALUES(200,	'Freelamfax', 'Catalogs', 29513, 2.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(212	Superfan	Games	2791	0.99);
+VALUES(212,	'Superfan',	'Games', 2791, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(216	Bamgreen	Utilities	2212	0.0);
+VALUES(216,	'Bamgreen', 'Utilities', 2212, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(222	Tincan	Navigation	17519	1.99);
+VALUES(222,	'Tincan', 'Navigation', 17519, 1.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(223	Konhow	Sports	11789	0.0);
+VALUES(223, 'Konhow', 'Sports', 11789, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(226	alphalux	Books	25956	0.99);
+VALUES(226,	'alphalux',	'Books', 25956, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(233	Lamsoncode	Education	3910	0.99);
+VALUES(233,	'Lamsoncode', 'Education', 3910, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(234	Vaiatamace	Productivity	28473	0.0);
+VALUES(234, 'Vaiatamace', 'Productivity', 28473, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(245	Planetquote	Finance	24163	1.99);
+VALUES(245, 'Planetquote', 'Finance', 24163, 1.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(248	Zotzenhow	Productivity	15641	0.0);
+VALUES(248, 'Zotzenhow', 'Productivity', 15641, 0.0);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(257	Duolux	Entertainment	6046	1.99);
+VALUES(257,	'Duolux', 'Entertainment', 6046, 1.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(258	Zummaline	Travel	26779	0.99);
+VALUES(258, 'Zummaline', 'Travel', 26779, 0.99);
 
 INSERT INTO fake_apps (id, name, category, downloads, price)
-VALUES(259	E-planet	Health & Fitness	28069	14.99);
+VALUES(259,	'E-planet',	'Health & Fitness', 28069, 14.99);
+
+SELECT *
+FROM fake_apps; 
+
+
+
+--*** COUNT ***--
+SELECT COUNT(*)
+FROM fake_apps;
+
+SELECT *
+FROM fake_apps;
+
+SELECT COUNT(*)
+FROM fake_apps
+WHERE price = 0.0;
+
+
+
+--*** SUM ***--
+SELECT SUM(downloads)
+FROM fake_apps;*/
+
+
+
+--*** MAX / MIN ***--
+
