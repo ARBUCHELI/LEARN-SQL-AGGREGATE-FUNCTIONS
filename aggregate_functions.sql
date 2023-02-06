@@ -220,9 +220,14 @@ GROUP BY price;
 
 SELECT category, SUM(downloads)
 FROM fake_apps
-GROUP BY category;*/
+GROUP BY category;
 
 
+
+--*** GROUP BY II ***--
+SELECT category, price, AVG(downloads)
+FROM fake_apps
+GROUP BY 1, 2*/
 
 
 
