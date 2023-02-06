@@ -208,7 +208,21 @@ SELECT name, ROUND(price, 0)
 FROM fake_apps;
 
 SELECT ROUND(AVG(price), 2)
-FROM fake_apps;*/
+FROM fake_apps;
+
+
+
+--*** GROUP BY I ***--
+SELECT price, COUNT(*)
+FROM fake_apps
+WHERE downloads > 20000
+GROUP BY price;
+
+SELECT category, SUM(downloads)
+FROM fake_apps
+GROUP BY category;*/
+
+
 
 
 
