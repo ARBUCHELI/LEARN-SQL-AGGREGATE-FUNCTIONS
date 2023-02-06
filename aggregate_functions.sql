@@ -231,3 +231,14 @@ GROUP BY 1, 2*/
 
 
 
+--*** HAVING ***--
+SELECT price, 
+   ROUND(AVG(downloads)),
+   COUNT(*)
+FROM fake_apps
+GROUP BY 1
+HAVING COUNT(price) > 10;
+
+
+
+
